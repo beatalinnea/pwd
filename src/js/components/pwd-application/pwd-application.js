@@ -53,9 +53,11 @@ template.innerHTML = `
       cursor: pointer;
     }
     @media screen and (max-width: 600px) {
-    .background {
-      min-height: 100vh;  /* Change to min-height for smaller screens */
-    }
+      .dock {
+        position: fixed; /* Fix the dock at the bottom of the viewport */
+        bottom: 0; /* Place the dock at the bottom of the viewport */
+        width: 100%; /* Make the dock span the full width of the viewport */
+      }
   }
   </style>
   <div class="background">
