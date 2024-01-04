@@ -52,6 +52,11 @@ template.innerHTML = `
     img:hover {
       cursor: pointer;
     }
+    @media screen and (max-width: 600px) {
+    .background {
+      min-height: 100vh;  /* Change to min-height for smaller screens */
+    }
+  }
   </style>
   <div class="background">
   <div id="header">
