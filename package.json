@@ -6,14 +6,12 @@
   "browser": "src/js/index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "mkdir dist && cp -r src/* dist/ && vite build",
     "serve": "vite preview",
     "lint": "npx eslint ./src || exit 0",
     "lint:fix": "npx eslint ./src --fix || exit 0"
   },
   "contributors": [
-    "Johan Leitet <johan.leitet@lnu.se>",
-    "Mats Loock <mats.loock@lnu.se>",
     "Beata Eriksson <be222gr@student.lnu.se>"
   ],
   "license": "MIT",
