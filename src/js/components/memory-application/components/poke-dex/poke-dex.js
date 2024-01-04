@@ -57,6 +57,60 @@ template.innerHTML = `
         margin-right: 30px;
         margin-top: 20px;
     }
+    /* Media query for iPhones (new models) */
+@media only screen and (max-width: 600px) {
+  .book {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally on smaller screens */
+  }
+
+  button {
+    background-color: #cfcfcf;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px; /* Adjust margin for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    border-radius: 15px; /* Adjust border-radius for smaller screens */
+    border: 1px solid black;
+  }
+
+  button:hover {
+    box-shadow: 0px 0px 5px #484848; /* Adjust box-shadow for smaller screens */
+  }
+
+  img {
+    max-width: 50px; /* Adjust max-width for smaller screens */
+  }
+
+  img:hover,
+  img:active {
+    cursor: pointer;
+  }
+
+  #large {
+    max-width: 90px; /* Adjust max-width for smaller screens */
+    position: relative;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .description {
+    width: min-content;
+    height: min-content;
+  }
+
+  #info {
+    position: absolute;
+    left: 100px; /* Adjust left position for smaller screens */
+    margin-right: 10px; /* Adjust margin-right for smaller screens */
+    margin-top: 10px; /* Adjust margin-top for smaller screens */
+    font-size: 15px;
+  }
+}
   </style>
   <div>
     <h2>Welcome to poké dex</h2>

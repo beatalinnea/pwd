@@ -24,6 +24,23 @@ template.innerHTML = `
     .hidden {
       display:none;
     }
+    /* Media query for small screens (phones) */
+  @media screen and (max-width: 600px) {
+    .outerborder {
+      border: 1px solid black;
+      margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .container {
+      width: 90%; /* Adjust width for smaller screens */
+      margin: 0 auto; /* Center the .container on smaller screens */
+    }
+
+    h2 {
+      padding: 5px; /* Adjust padding for smaller screens */
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  }
   </style>
   <section class="outerborder">
   <div class="container">

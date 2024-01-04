@@ -77,6 +77,70 @@ template.innerHTML = `
       cursor: pointer;
       height: 25px;
     }
+/* Media query for small screens (phones) */
+@media screen and (max-width: 600px) {
+  .innerborder {
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .chat {
+    background-color: #cfcfcf;
+    color: #000000;
+    height: 200px; /* Adjust height for smaller screens */
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  #messageform {
+    background-color: #cfcfcf;
+    color: #000000;
+    position: relative; /* Adjust position for absolute child elements */
+  }
+
+  #field {
+    border: none;
+    width: calc(100% - 20px); /* Adjust width for smaller screens */
+    position: relative; /* Adjust position for absolute child elements */
+  }
+
+  #yourmessage {
+    padding-right: 30px; /* Adjust padding for smaller screens */
+    outline: none;
+    width: 100%; /* Adjust width for smaller screens */
+    height: 20px; /* Adjust height for smaller screens */
+  }
+
+  #emojiicon {
+    position: absolute;
+    left: 236px; /* Adjust position for smaller screens */
+    top: 10px;
+    max-width: 15px; /* Adjust max-width for smaller screens */
+  }
+  .holdtext {
+      height: 50px;
+      width: 80%;
+      margin: none;
+      position: relative;
+  }
+  .emojilist {
+    max-width: 150px; /* Adjust max-width for smaller screens */
+    max-height: 80px; /* Adjust max-height for smaller screens */
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: #ffffff;
+    position: absolute;
+    left: 50px; /* Adjust position for smaller screens */
+    top: -65px; /* Adjust position for smaller screens */
+    border: 1px solid #B3B3B3;
+    padding: 0;
+  }
+
+  #send {
+    cursor: pointer;
+    height: 20px; /* Adjust height for smaller screens */
+  }
+}
   </style>
   <section class="innerborder">
   <div class="chat">

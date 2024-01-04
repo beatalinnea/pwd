@@ -36,6 +36,13 @@ template.innerHTML = `
       padding-top: 3px;
       font-size: 1rem;
     }
+          /* Media query for small screens (phones) */
+  @media screen and (max-width: 600px) {
+    :host {
+      width: 90%; /* Adjust width for smaller screens */
+      margin: 0 auto; /* Center the .container on smaller screens */
+    }
+  }
   </style>
   <div class="header">
     <p id="appname"></p>

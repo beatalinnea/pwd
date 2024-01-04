@@ -47,6 +47,30 @@ template.innerHTML = `
     button {
       cursor: pointer;
     }
+  /* Media query for small screens (phones) */
+  @media screen and (max-width: 600px) {
+    .border {
+      width: 100%; /* Adjust width for smaller screens */
+      margin: 0 auto; /* Center the .border on smaller screens */
+    }
+
+    .joke {
+      height: auto; /* Allow the joke container to adjust its height */
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .headline {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    p {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  }
   </style>
   <section class="border">
   <h3>The greatest...</h3>

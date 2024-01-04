@@ -16,6 +16,21 @@ template.innerHTML = `
     #start {
         cursor: pointer;
     }
+    /* Media query for small screens (phones) */
+@media screen and (max-width: 600px) {
+  .nickname {
+    padding: 0.5em; /* Adjust padding for smaller screens */
+    text-align: center;
+    border: none;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  #start {
+    cursor: pointer;
+    margin-top: 10px; /* Add some space above the #start button on smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
   </style>
   <form id="nicknameform">
   <fieldset class="nickname">
